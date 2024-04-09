@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0c1622 0%, #333646 100%);
+}
+
+.App {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.square-border {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background-color: black;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 74px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 74px;
+}
+
+.square:hover {
+  background-color: rgb(18, 111, 187);
+  color: white;
+}
+
+.status {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.reset {
+  margin-top: 20px;
+}
+
+.resetbutton {
+  height: 40px;
+  width: 100px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.resetbutton:hover {
+  background-color: rgb(90, 112, 129);
+}
+
+.gamename {
+  color: #fff;
+  font-size: 40px;
+}
