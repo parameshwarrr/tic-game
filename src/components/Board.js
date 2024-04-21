@@ -11,6 +11,7 @@ function Board() {
   let status;
   if (winner) {
     status = "Winner: " + winner;
+    document.body.style.background = "#863757";
   } else {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
@@ -30,7 +31,11 @@ function Board() {
   };
 
   const onHandleReset = () => {
-    return setXIsNext(true) & setSquares(Array(9).fill(null));
+    return (
+      setXIsNext(true) &
+      setSquares(Array(9).fill(null)) &
+      (document.body.style.background = "#262c3a")
+    );
   };
 
   return (
