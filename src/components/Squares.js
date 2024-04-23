@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function Squares({ value, onSquareClick }) {
+function Squares({ value, onSquareClick, hovereffect }) {
   // const [value, setValue] = useState(null);
   // const handleclick = () => {
   //   setValue("X");
@@ -9,7 +9,10 @@ function Squares({ value, onSquareClick }) {
 
   return (
     <>
-      <button className="square" onClick={onSquareClick}>
+      <button
+        className={`square ${hovereffect ? "effect1" : "effect2"}`}
+        onClick={onSquareClick}
+      >
         {value}
       </button>
     </>

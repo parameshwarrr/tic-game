@@ -3,7 +3,15 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #262c3a;
+  background: radial-gradient(
+    circle,
+    #416260,
+    #37555d,
+    #364756,
+    #383848,
+    #372b37
+  );
+  /* radial-gradient(ellipse at bottom, #0c1622 0%, #333646 100%) */
 }
 
 .App {
@@ -36,8 +44,13 @@ body {
   width: 74px;
 }
 
-.square:hover {
+.square:hover.effect1 {
   background-color: rgb(18, 111, 187);
+  color: white;
+}
+
+.square:hover.effect2 {
+  background-color: rgb(168, 70, 127);
   color: white;
 }
 
