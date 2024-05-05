@@ -50,7 +50,7 @@ body {
 }
 
 .square:hover.effect2 {
-  background-color: rgb(168, 70, 127);
+  background-color: rgb(131, 72, 106);
   color: white;
 }
 
@@ -84,4 +84,20 @@ body {
 .gamename {
   color: #fff;
   font-size: 40px;
+}
+
+.home-button {
+  height: 80px;
+  width: 180px;
+  font-size: 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+  background-color: rgb(90, 112, 129);
 }
